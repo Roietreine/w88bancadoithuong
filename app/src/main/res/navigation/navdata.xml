@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navdata"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="project.rr.w88bancadoithuong.dashboard.ui.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_webviewFragment"
+            app:destination="@id/webviewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_webviewFragment2"
+            app:destination="@id/webviewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fishFragment"
+            app:destination="@id/fishFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fishFragment"
+        android:name="project.rr.w88bancadoithuong.fishgame_features.presentation.FishFragment"
+        android:label="fragment_fish"
+        tools:layout="@layout/fragment_fish" >
+        <action
+            android:id="@+id/action_fishFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_fishFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="project.rr.w88bancadoithuong.privacy.PrivacyFragment"
+        android:label="fragment_privacy"
+        tools:layout="@layout/fragment_privacy" >
+        <action
+            android:id="@+id/action_privacyFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_privacyFragment_to_webviewFragment"
+            app:destination="@id/webviewFragment" />
+        <action
+            android:id="@+id/action_privacyFragment_to_webviewFragment2"
+            app:destination="@id/webviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webviewFragment"
+        android:name="project.rr.w88bancadoithuong.webview.WebviewFragment"
+        android:label="fragment_webview"
+        tools:layout="@layout/fragment_webview" >
+        <action
+            android:id="@+id/action_webviewFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_webviewFragment_to_mainFragment2"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_webviewFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="project.rr.w88bancadoithuong.fishgame_features.presentation.GameOverFragment"
+        android:label="fragment_game_over"
+        tools:layout="@layout/fragment_game_over" >
+        <action
+            android:id="@+id/action_gameOverFragment_to_fishFragment"
+            app:destination="@id/fishFragment" />
+        <action
+            android:id="@+id/action_gameOverFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

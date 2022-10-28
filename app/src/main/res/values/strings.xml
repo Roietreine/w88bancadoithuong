@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">W88 Bắn Cá Đổi Thưởng</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="game_over">Game Over</string>
+    <string name="score">Score</string>
+    <string name="play_again">Play Again</string>
+    <string name="no">No?</string>
+    <string name="yes">Yes?</string>
+    <string name="mini_game">Trò chơi nhỏ</string>
+    <string name="website">Đăng Ký</string>
+    <string name="privacy_policy">Đăng nhập</string>
+
+</resources>
